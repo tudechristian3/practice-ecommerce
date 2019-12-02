@@ -1,5 +1,5 @@
 <?php
-Auth::routes();
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,7 +11,9 @@ Auth::routes();
 |
 */
 
+
 Route::get('/', function () {
     return view('welcome');
 });
 require 'admin.php';
+Auth::routes();
